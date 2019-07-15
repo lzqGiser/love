@@ -56,22 +56,21 @@
 					</div>
 					<div id="loveu">
 						Love u forever and ever.<br/>
-						<div class="signature">- Muyy</div>
+						<div class="signature">- 强哥</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="copyright">
-			Inspired by <a href="https://github.com/MuYunyun/love-you">FlowerPower</a> project.<br />
-			Copyright © 2017 <a href='https://github.com/MuYunyun'>Muyy</a>
+			Maker by your love
 		</div>
 	</div>
 	<script type="text/javascript">
 		let offsetX = $("#loveHeart").width() / 2;
 		let offsetY = $("#loveHeart").height() / 2 - 55;
 		let together = new Date();
-		together.setFullYear(2017, 0, 26); //2017/1/26
-		together.setHours(20);
+		together.setFullYear(2011, 6, 3); //2010/6/3
+		together.setHours(24);
 		together.setMinutes(0);
 		together.setSeconds(0);
 		together.setMilliseconds(0);
@@ -86,7 +85,9 @@
 				startHeartAnimation();
 			}, 5000);
 
-			timeElapse(together);
+			setInterval(function(){
+				timeElapse(together);
+			}, 1000)
 
 			adjustCodePosition();
 			$("#code").typewriter(); // 打字效果
