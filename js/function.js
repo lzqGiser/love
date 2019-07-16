@@ -16,7 +16,7 @@ $(function () {
 	$("#content").css("width", $loveHeart.width() + $("#code").width());
 	$("#content").css("height", Math.max($loveHeart.height(), $("#code").height()));
 	$("#content").css("margin-top", Math.max(($window.height() - $("#content").height()) / 2, 10)); // 垂直居中
-	$("#content").css("margin-left", Math.max(($window.width() - $("#content").width()) / 2, 10));  // 水平居中
+	$("#content").css("margin-left", Math.max(($window.width() - $("#content").width()) / 4, 10));  // 水平居中
 
 	// renderLoop
 	setInterval(function () {
@@ -119,7 +119,7 @@ function adjustWordsPosition() {
 }
 
 function adjustCodePosition() {
-	$('#code').css("margin-top", ($('#garden').height() - $("#code").height()) / 2);
+	$('#code').css("margin-top", ($('#garden').height() - $("#code").height()) / 5);
 }
 
 function showLoveU() {

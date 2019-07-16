@@ -12,9 +12,13 @@ body {
 }
 
 #loveHeart {
-	float: left;
+	/* float: left; */
 	width: 670px;
 	height: 625px;
+	position: absolute;
+	right: 20px;
+	top:0;
+	z-index: 100;
 }
 
 #garden {
@@ -63,6 +67,56 @@ body {
 #messages{
 	display: none;
 }
+
+/* #photo{
+	width: 200px;
+    height: 50px;
+    border: 1px solid red;
+} */
+
+.container {
+	/* margin: 50px auto; */
+	width: 400px;
+	height: 250px;
+	overflow: hidden;
+	border: 10px solid;
+	border-top-color: #856036;
+	border-left-color: #5d4426;
+	border-bottom-color: #856036;
+	border-right-color: #5d4426;
+	position: relative;
+  }
+  
+  /* .photo {
+	position: absolute;
+	animation: round 16s infinite;
+	opacity: 0;
+  } */
+  
+  /* @keyframes round {
+	25% {
+	  opacity: 1;
+	}
+	40% {
+	  opacity: 0;
+	}
+  }
+  img:nth-child(1) {
+	animation-delay: 12s;
+  }
+  
+  img:nth-child(2) {
+	animation-delay: 8s;
+  }
+  
+  img:nth-child(3) {
+	animation-delay: 4s;
+  }
+  
+  img:nth-child(4) {
+	animation-delay: 0s;
+  }
+   */
 
 #code {
 	float: left;

@@ -15,14 +15,24 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
 	<script type="text/javascript" src="js/function.js"></script>
+	<script src="js/prefixfree.min.js"></script>
 </head>
 <body>
 	<div id="mainDiv">
 		<div id="content">
+			<div class="container">
+				<img class='photo'  src="images/8562729616_35b1384aa1.jpg" alt="" />
+				<img class='photo'  src="images/8113424031_72048dd887.jpg" alt="" />
+				<img class='photo'  src="images/8562729616_35b1384aa1.jpg" alt="" />
+				<img class='photo'  src="images/8562523343_9bb49b7b7b.jpg" alt="" />
+			</div>
 			<div id="code">
 				<span class="comments">/**</span><br/>
-				<span class="space"/><span class="comments">* We are both programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to describe our stories.</span><br />
+				<span class="space"/><span class="comments">* 2010, 那年, 你轻轻踏入我的视线～～</span><br />
+				<span class="space"/><span class="comments">* 我发送“hi girl”和你寒暄.</span><br />
+				<span class="space"/><span class="comments">* 亲爱的宝贝, 不知不觉我们走过了xxx天.</span><br />
+				<span class="space"/><span class="comments">* .</span><br />
+
 				<span class="space"/><span class="comments">*/</span><br />
 				Boy i = <span class="keyword">new</span> Boy(<span class="string">"Muyy"</span>);<br />
 				Girl u = <span class="keyword">new</span> Gril(<span class="string">"Poem"</span>);<br />
@@ -70,7 +80,7 @@
 		let offsetY = $("#loveHeart").height() / 2 - 55;
 		let together = new Date();
 		together.setFullYear(2011, 6, 3); //2010/6/3
-		together.setHours(24);
+		together.setHours(20);
 		together.setMinutes(0);
 		together.setSeconds(0);
 		together.setMilliseconds(0);
@@ -79,7 +89,7 @@
 			msg.id = "errorMsg";
 			msg.innerHTML = "Your browser doesn't support HTML5!";
 			document.body.appendChild(msg);
-			$("#code").css("display", "none");
+			// $("#code").css("display", "none");
 		} else {
 			setTimeout(function() {
 				startHeartAnimation();
